@@ -420,6 +420,14 @@
           // GWD Predefined Function
           gwd.actions.events.setInlineStyle('page1_1', 'transition: all 0.5s linear; cursor: default;');
         };
+        gwd.auto_Page1_1Click = function(event) {
+          // GWD Predefined Function
+          gwd.actions.gwdGenericad.exit('gwd-ad', 'http://www.uristpartner.com.ua/', true);
+        };
+        gwd.auto_Page1Click = function(event) {
+          // GWD Predefined Function
+          gwd.actions.gwdGenericad.exit('gwd-ad', 'http://www.uristpartner.com.ua/', true);
+        };
       </script>
       <script type="text/javascript" gwd-events="registration">
         // Код для обработки событий в Google Web Designer
@@ -431,6 +439,8 @@
           gwd.actions.events.addHandler('page1_1', 'event-4', gwd.auto_Page1_1Event_4, false);
           gwd.actions.events.addHandler('page1_1', 'mouseover', gwd.auto_Page1_1Mouseover, false);
           gwd.actions.events.addHandler('page1_1', 'mouseout', gwd.auto_Page1_1Mouseout, false);
+          gwd.actions.events.addHandler('page1_1', 'click', gwd.auto_Page1_1Click, false);
+          gwd.actions.events.addHandler('page1', 'click', gwd.auto_Page1Click, false);
           gwd.actions.timeline.captureAnimationEnd(document.body);
         };
         gwd.actions.events.deregisterEventHandlers = function(event) {
@@ -440,6 +450,8 @@
           gwd.actions.events.removeHandler('page1_1', 'event-4', gwd.auto_Page1_1Event_4, false);
           gwd.actions.events.removeHandler('page1_1', 'mouseover', gwd.auto_Page1_1Mouseover, false);
           gwd.actions.events.removeHandler('page1_1', 'mouseout', gwd.auto_Page1_1Mouseout, false);
+          gwd.actions.events.removeHandler('page1_1', 'click', gwd.auto_Page1_1Click, false);
+          gwd.actions.events.removeHandler('page1', 'click', gwd.auto_Page1Click, false);
           gwd.actions.timeline.releaseAnimationEnd(document.body);
         };
         document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
@@ -453,22 +465,22 @@
       <div is="gwd-page" id="page1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-div-qlbm gwd-div-8tbl" data-gwd-width="240px" data-gwd-height="400px">
         <div class="gwd-page-content gwd-page-size gwd-div-k6bl gwd-div-1uuf">
           <img is="gwd-image" source="assets/fonnn.jpg" id="gwd-image_6" class="gwd-img-12q7" data-gwd-tl-locked="">
-          <p class="gwd-p-bfih gwd-p-3qr2 gwd-p-dfn7">Юридична фірма<br>
+          <p class="gwd-p-bfih gwd-p-3qr2 gwd-p-dfn7" data-gwd-tl-locked="">Юридична фірма<br>
             "Юристи та партнери"</p>
           <p class="gwd-p-15th gwd-p-bjiu" data-gwd-tl-locked="">094-94-99-197; 048-737-30-79
           </p>
-          <p class="gwd-p-1unz gwd-gen-12ccgwdanimation gwd-p-1f32 gwd-p-1464">Шукаєте юридичний<br>
+          <p class="gwd-p-1unz gwd-gen-12ccgwdanimation gwd-p-1f32 gwd-p-1464" data-gwd-tl-locked="">Шукаєте юридичний<br>
             захист?
           </p>
-          <p class="gwd-p-1m8b gwd-p-bf81">Закон всегда<br>
+          <p class="gwd-p-1m8b gwd-p-bf81" data-gwd-tl-locked="">Закон всегда<br>
             предусматривает<br>
             способ защиты</p>
-          <p class="gwd-p-do0g gwd-gen-2u0wgwdanimation gwd-p-1cxn gwd-p-kqwk">- Вирішення податкових<br>
+          <p class="gwd-p-do0g gwd-gen-2u0wgwdanimation gwd-p-1cxn gwd-p-kqwk" data-gwd-tl-locked="">- Вирішення податкових<br>
             спорів<br>
             
             <span class="gwd-span-v305">- Ліквідація підприємств<br></span><span class="gwd-span-10ki">без перевірки</span>
           </p>
-          <p class="gwd-p-8o3r gwd-gen-1vaugwdanimation gwd-p-1qxe gwd-p-12wh">- Захист від перевірок<br>
+          <p class="gwd-p-8o3r gwd-gen-1vaugwdanimation gwd-p-1qxe gwd-p-12wh" data-gwd-tl-locked="">- Захист від перевірок<br>
             &nbsp; Держпраці<br>
             
             <span class="gwd-span-rbjy">- Юридичне&nbsp;<br></span><span class="gwd-span-mj8f">&nbsp; обслуговування&nbsp;<br></span><span class="gwd-span-7xdu">&nbsp; від 3 тис. грн. в міс.</span>
@@ -479,22 +491,22 @@
       <div is="gwd-page" id="page1_1" class="gwd-page-wrapper gwd-page-size gwd-lightbox gwd-div-qlbm gwd-div-8tbl" data-gwd-width="240px" data-gwd-height="400px">
         <div class="gwd-page-content gwd-page-size gwd-div-k6bl gwd-div-1uuf">
           <img is="gwd-image" source="assets/fonnn.jpg" id="gwd-image_7" class="gwd-img-12q7" data-gwd-tl-locked="">
-          <p class="gwd-p-bfih gwd-p-3qr2 gwd-p-1a1i">Юридична фірма<br>
+          <p class="gwd-p-bfih gwd-p-3qr2 gwd-p-1a1i" data-gwd-tl-locked="">Юридична фірма<br>
             "Юристи та партнери"</p>
           <p class="gwd-p-15th gwd-p-bjiu" data-gwd-tl-locked="">094-94-99-197; 048-737-30-79
           </p>
-          <p class="gwd-p-1unz gwd-p-1f32 gwd-gen-u5pngwdanimation gwd-p-1my2">Шукаєте юридичний<br>
+          <p class="gwd-p-1unz gwd-p-1f32 gwd-gen-u5pngwdanimation gwd-p-1my2" data-gwd-tl-locked="">Шукаєте юридичний<br>
             захист?
           </p>
-          <p class="gwd-p-1m8b gwd-p-bf81">Закон всегда<br>
+          <p class="gwd-p-1m8b gwd-p-bf81" data-gwd-tl-locked="">Закон всегда<br>
             предусматривает<br>
             способ защиты</p>
-          <p class="gwd-p-do0g gwd-p-1cxn gwd-gen-kx7cgwdanimation gwd-p-5tyk">- Вирішення податкових<br>
+          <p class="gwd-p-do0g gwd-p-1cxn gwd-gen-kx7cgwdanimation gwd-p-5tyk" data-gwd-tl-locked="">- Вирішення податкових<br>
             спорів<br>
             
             <span class="gwd-span-v305">- Ліквідація підприємств<br></span><span class="gwd-span-10ki">без перевірки</span>
           </p>
-          <p class="gwd-p-8o3r gwd-p-1qxe gwd-gen-rrhugwdanimation gwd-p-144m">- Захист від перевірок<br>
+          <p class="gwd-p-8o3r gwd-p-1qxe gwd-gen-rrhugwdanimation gwd-p-144m" data-gwd-tl-locked="">- Захист від перевірок<br>
             &nbsp; Держпраці<br>
             
             <span class="gwd-span-rbjy">- Юридичне&nbsp;<br></span><span class="gwd-span-mj8f">&nbsp; обслуговування&nbsp;<br></span><span class="gwd-span-7xdu">&nbsp; від 3 тис. грн. в міс.</span>

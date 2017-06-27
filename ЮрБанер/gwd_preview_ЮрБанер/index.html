@@ -873,6 +873,14 @@ body {
           // GWD Predefined Function
           gwd.actions.events.setInlineStyle('page1_1', 'transition: all 0.5s linear; cursor: default;');
         };
+        gwd.auto_Page1_1Click = function(event) {
+          // GWD Predefined Function
+          gwd.actions.gwdGenericad.exit('gwd-ad', 'http://www.uristpartner.com.ua/', true);
+        };
+        gwd.auto_Page1Click = function(event) {
+          // GWD Predefined Function
+          gwd.actions.gwdGenericad.exit('gwd-ad', 'http://www.uristpartner.com.ua/', true);
+        };
       </script>
       <script type="text/javascript" gwd-events="registration">
         // Код для обработки событий в Google Web Designer
@@ -884,6 +892,8 @@ body {
           gwd.actions.events.addHandler('page1_1', 'event-4', gwd.auto_Page1_1Event_4, false);
           gwd.actions.events.addHandler('page1_1', 'mouseover', gwd.auto_Page1_1Mouseover, false);
           gwd.actions.events.addHandler('page1_1', 'mouseout', gwd.auto_Page1_1Mouseout, false);
+          gwd.actions.events.addHandler('page1_1', 'click', gwd.auto_Page1_1Click, false);
+          gwd.actions.events.addHandler('page1', 'click', gwd.auto_Page1Click, false);
           gwd.actions.timeline.captureAnimationEnd(document.body);
         };
         gwd.actions.events.deregisterEventHandlers = function(event) {
@@ -893,6 +903,8 @@ body {
           gwd.actions.events.removeHandler('page1_1', 'event-4', gwd.auto_Page1_1Event_4, false);
           gwd.actions.events.removeHandler('page1_1', 'mouseover', gwd.auto_Page1_1Mouseover, false);
           gwd.actions.events.removeHandler('page1_1', 'mouseout', gwd.auto_Page1_1Mouseout, false);
+          gwd.actions.events.removeHandler('page1_1', 'click', gwd.auto_Page1_1Click, false);
+          gwd.actions.events.removeHandler('page1', 'click', gwd.auto_Page1Click, false);
           gwd.actions.timeline.releaseAnimationEnd(document.body);
         };
         document.addEventListener("DOMContentLoaded", gwd.actions.events.registerEventHandlers);
